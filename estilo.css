@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+html,
+body {
+    background-color:#dce1e5;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*HEADER */
+
+header {
+    background-color: black;
+    font-size: 18px;
+    color: #EFF5FB;
+}
+
+header .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 120px;
+    margin: auto;
+}
+
+header .cabecalho h2 {
+    color: #ffb914;
+    font-size: 35px;
+}
+
+header .cabecalho h2 span {
+    color: #EFF5FB;
+    font-size: 18px;
+    font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ff8826;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    transition: all 240ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255,255,255,0.16);
+    border-radius: 5px;
+}
+
+/*MAIN */
+
+main {
+    margin-bottom: 50px;
+}
+
+main .container-main {
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;    
+    max-width: 980px;
+    margin: 120px auto 140px auto;
+}
+
+main .container-main h1 {
+    font-size: 50px;
+    color: #212020;
+}
+
+main .container-main p {
+    color:#424242;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+main .botao-simulacao  {
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: black;     
+}
+
+main .botao-simulacao a {
+    text-decoration: none;
+    color: #EFF5FB;
+    font-weight: 800;
+    background-image: linear-gradient(to right, rgb(228, 232, 11), rgb(211, 179, 22), rgb(167, 150, 40));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip:text;    
+}
+
+main .botao-simulacao a:hover {
+    background-color: rgb(224, 123, 51);
+}
+
+main .img-logo img {
+    max-width: 520px;
+    max-height: 500px;
+    margin-left: 50px; 
+    border-radius: 8px;
+}
+
+/*SECTION */
+
+.conteudo-objetivos {
+    width: 90%;
+    max-width: 980px;
+    height: 70%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.titulo-obj h1 {          /*ESTÁ ANTES DA SECTION */
+    font-size: 46px;
+    font-family: 'Roboto Condensed';
+    color: #212020;
+    display: flex;
+    text-align: center;   
+    max-width: 980px;
+    margin: auto;
+    padding-bottom: 45px;
+}
+
+
+.texto-obj {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #6e6a6a;
+}
+
+.cards-objetivos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 7px 7px 15px -5px;
+    transition: all 0.5s ease 0.1s;
+}
+
+.cards-objetivos:hover {
+    transform: translateY(-2px) scale(1.1);
+}
+
+.img-obj {
+    height: 250px;
+    padding-top: 55%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 7px;
+}
+
+.img-obj img {
+    width: 100%;
+    min-width: 300px;
+    position: absolute;
+    border-radius: 10px;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*SECTION - VANTAGENS*/
+
+.vantagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 90vh;
+    margin: 120px auto;
+    text-align:center;
+    justify-content: space-around;    
+    background-color: #BE5B00;
+    color:#212020;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.titulo-vantagens {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+}
+
+.vantagens h1 {
+    font-family: 'Roboto Condensed';
+    font-size: 46px;
+    padding-top: 80px;
+}
+
+.vantagens h3 {
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.vantagens p {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.vatagem-4 {
+    padding-right: 10px;
+}
+
+/*SECTION 2 -regioes atendimento*/
+
+.regiao-atendimento {
+    display:flex;  
+    align-items: center;   
+    max-width: 980px;
+    margin: 80px auto;
+}
+
+.titulo-regiao  {
+    height: 100px;
+    display:flexbox;
+    color: #212020;
+    font-size: 50px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    line-height: 100px;
+}
+
+.img-mapa img {
+    display: flex;
+    width: 450px;
+    align-items: center;
+    
+}
+
+.texto-reg-atendimento {
+    font-size: 20px;
+    color: #424242;
+    line-height: 30px;
+    margin: 15px auto;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+.italico {
+    font-style: italic;
+    color: black;
+}
+
+/*FOOTER*/
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 200px;
+    margin: 5px auto;
+    background-color: black;
+    color: #eaedf0;
+    text-align: justify;
+    place-items: center;
+}
+
+.rodape img{
+    width: 50px;  
+}
+
+.rodape h4 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #ff8826;
+}
+
+.rodape p {
+    padding: 5px;
+}
+
+
+.rodape ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.rodape ul li {
+    list-style: none;
+}
+
+.faleconosco h4 p {
+    position:relative;
+}
