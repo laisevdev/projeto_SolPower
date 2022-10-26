@@ -66,6 +66,10 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
+#checkbox-menu {
+    display: none;
+}
+
 /*MAIN */
 
 main {
