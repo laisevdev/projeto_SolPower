@@ -13,19 +13,13 @@
     }
 }
 
-@media (min-height: 631px) {
-    .container-menu {
-        display: none;
-    }
+@media (max-width: 630px) {
     .cabecalho h2 {
         padding-left: 50px;
     }
     main .container-main {
         margin-top: 75px;
     }
-}
-
-@media (max-width: 630px) {
     header nav ul li a {
         display: none;
     }
