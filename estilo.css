@@ -38,6 +38,12 @@ header .cabecalho h2 {
     font-size: 35px;
 }
 
+header .cabecalho h2 a {
+    text-decoration: none;
+    color: #ffb914;
+    font-size: 35px;
+}
+
 header .cabecalho h2 span {
     color: #EFF5FB;
     font-size: 18px;
@@ -69,6 +75,7 @@ header nav ul li a:hover {
 #checkbox-menu {
     display: none;
 }
+
 
 /*MAIN */
 
