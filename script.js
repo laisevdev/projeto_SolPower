@@ -1,7 +1,5 @@
 function ativaScroll () {
     const scroll = document.querySelectorAll ('.js-scroll');
-    console.log(scroll)
-
 
     function scrollSuave(event) {
         event.preventDefault();
