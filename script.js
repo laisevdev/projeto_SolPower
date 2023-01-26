@@ -1,19 +1,22 @@
-function ativaLinks () {
-    const linksCabecalho = document.querySelectorAll ('.menu-cabecalho li');
+function ativaScroll () {
+    const scroll = document.querySelectorAll ('.js-scroll');
+    console.log(scroll)
 
-    function atvLinkCabecalho (event) {
+
+    function scrollSuave(event) {
         event.preventDefault();
-        linksCabecalho.forEach ((links) => {
-        links.removeAttribute ('class', 'LINK-ATIVO');
-        })
-        event.currentTarget.setAttribute ('class', 'LINK-ATIVO');
+        const href = event.currentTarget.getAttribute('href');
+        const secao = document.querySelector (href);
+        
+        secao.scrollIntoView ({
+            block: 'start',
+            behavior: 'smooth',
+        });    
     };
 
-    linksCabecalho.forEach ((links) => {
-        links.addEventListener ('click', atvLinkCabecalho);
+    scroll.forEach((link, index) => {
+        link.addEventListener('click', scrollSuave);
     });
-}
+    }
 
-ativaLinks();
-
-const 
+ativaScroll();
