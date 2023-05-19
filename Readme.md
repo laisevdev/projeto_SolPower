@@ -1,1 +1,1 @@
-Esse é meu primeiro projeto de website. Praticando HTML5 e CSS3.
+Esse é meu primeiro projeto de website. Praticando HTML5, CSS3 e JavaScript.
